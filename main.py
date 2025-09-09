@@ -32,7 +32,7 @@ async def vote(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="1984", callback_data="vote_1984")],
         [InlineKeyboardButton(text="451° по Фаренгейту", callback_data="vote_451")],
-        [InlineKeyboardButton(text="Война и мир", callback_data="vote_war")],
+        [InlineKeyboardButton(text="Война миров", callback_data="vote_war")],
     ])
     await message.answer("Голосуем за следующую книгу:", reply_markup=keyboard)
 
